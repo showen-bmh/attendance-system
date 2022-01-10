@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="attendance-app" />
+        <module name="attendance-browser" />
+        <module name="attendance-core" />
+        <module name="attendance-demo" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="attendance-app" options="-parameters" />
+      <module name="attendance-browser" options="-parameters" />
+      <module name="attendance-core" options="-parameters" />
+      <module name="attendance-demo" options="-parameters" />
+    </option>
+  </component>
+</project>
