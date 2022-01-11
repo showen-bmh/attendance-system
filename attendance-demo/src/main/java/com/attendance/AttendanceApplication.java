@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 
+//@RestController
 @SpringBootApplication
-@RestController
 public class AttendanceApplication {
 
     /**
@@ -25,9 +25,8 @@ public class AttendanceApplication {
         SpringApplication.run(AttendanceApplication.class, args);
     }
 
-    @GetMapping("/hello")
-    public String hello() {
-        return "hello spring security";
-    }
-
+//    @GetMapping("/hello")
+//    public String hello() {
+//        return "hello spring security";
+//    }
 }

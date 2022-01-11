@@ -10,7 +10,7 @@ import java.util.Date;
 public class TimeFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        System.out.println("time filter init");
+        System.out.println("filter init");
     }
 
     @Override
