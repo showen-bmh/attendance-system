@@ -4,6 +4,8 @@ import com.attendance.dto.User;
 import com.attendance.dto.UserQueryCondition;
 import com.attendance.exception.UserNotExistException;
 import com.fasterxml.jackson.annotation.JsonView;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.springframework.data.web.PageableDefault;
@@ -67,6 +69,7 @@ public class UserController {
     //    @RequestMapping(value = "/class", method = RequestMethod.GET)
     @GetMapping("/class")
     @JsonView(User.UserSimpleView.class)
+    @ApiOperation(value = "用户查询服务")
     public List<User> classQuery(UserQueryCondition condition, @PageableDefault(page = 2, size = 17, sort = "username,asc") Pageable pageable) {
 
         System.out.println(ReflectionToStringBuilder.toString(condition, ToStringStyle.MULTI_LINE_STYLE));
@@ -83,7 +86,7 @@ public class UserController {
     //    @RequestMapping(value = "/user/{id:\\d+}", method = RequestMethod.GET)
     @GetMapping("/{id:\\d+}")
     @JsonView(User.UserDetailView.class)
-    public User getInfo(@PathVariable(name = "id") String id) {
+    public User getInfo(@ApiParam("用户ID") @PathVariable(name = "id") String id) {
 
 //        throw new UserNotExistException(id);
 
