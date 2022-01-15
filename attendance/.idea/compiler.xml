@@ -7,19 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="attendance-app" />
-        <module name="attendance-browser" />
+        <module name="attendance-admin" />
         <module name="attendance-core" />
-        <module name="attendance-demo" />
+        <module name="attendance-security" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="attendance-app" options="-parameters" />
-      <module name="attendance-browser" options="-parameters" />
+      <module name="attendance-admin" options="-parameters" />
       <module name="attendance-core" options="-parameters" />
-      <module name="attendance-demo" options="-parameters" />
+      <module name="attendance-security" options="-parameters" />
     </option>
   </component>
 </project>

@@ -50,9 +50,8 @@
         </plugins>
     </build>
     <modules>
-        <module>../attendance-app</module>
-        <module>../attendance-browser</module>
-        <module>../attendance-core</module>
-        <module>../attendance-demo</module>
+        <module>attendance-security</module>
+        <module>attendance-core</module>
+        <module>attendance-admin</module>
     </modules>
 </project>
