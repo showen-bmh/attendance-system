@@ -1,5 +1,6 @@
 package com.attendance.security.browser;
 
+import com.attendance.security.core.properties.SecurityProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,6 +14,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Autowired
+    private SecurityProperties securityProperties;
 
     @Autowired
     MyUserDetailService myUserDetailService;
@@ -37,7 +41,7 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
 //        http.httpBasic()
                 .and()
                 .authorizeRequests()
-                .antMatchers("/authentication/require").permitAll()
+                .antMatchers("/authentication/require", securityProperties.getBrowserProperties().getLoginPage()).permitAll()
                 .anyRequest()
                 .authenticated()
                 .and()
