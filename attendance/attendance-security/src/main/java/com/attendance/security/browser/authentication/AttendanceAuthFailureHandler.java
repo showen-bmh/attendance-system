@@ -1,5 +1,6 @@
 package com.attendance.security.browser.authentication;
 
+import com.attendance.security.browser.support.SimpleResponse;
 import com.attendance.security.core.properties.LoginResponseType;
 import com.attendance.security.core.properties.SecurityProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -29,7 +30,7 @@ public class AttendanceAuthFailureHandler extends SimpleUrlAuthenticationFailure
         if (LoginResponseType.JSON.equals(securityProperties.getBrowserProperties().getLoginResponseType())) {
             response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
             response.setContentType("application/json;charset=UTF-8");
-            response.getWriter().write(objectMapper.writeValueAsString(exception));
+            response.getWriter().write(objectMapper.writeValueAsString(new SimpleResponse(exception.getMessage())));
         } else {
             super.onAuthenticationFailure(request, response, exception);
         }
