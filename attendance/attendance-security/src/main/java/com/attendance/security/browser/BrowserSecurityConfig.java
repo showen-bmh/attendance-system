@@ -1,5 +1,7 @@
 package com.attendance.security.browser;
 
+import com.attendance.security.browser.authentication.AttendanceAuthFailureHandler;
+import com.attendance.security.browser.authentication.AttendanceAuthSuccessHandler;
 import com.attendance.security.core.properties.SecurityProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -17,6 +19,12 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private SecurityProperties securityProperties;
+
+    @Autowired
+    private AttendanceAuthSuccessHandler attendanceAuthSuccessHandler;
+
+    @Autowired
+    private AttendanceAuthFailureHandler attendanceAuthFailureHandler;
 
     @Autowired
     MyUserDetailService myUserDetailService;
@@ -38,12 +46,17 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
         http.formLogin()
                 .loginPage("/authentication/require")
                 .loginProcessingUrl("/authentication/form")
+                .successHandler(attendanceAuthSuccessHandler)
+                .failureHandler(attendanceAuthFailureHandler)
+
+
 //        http.httpBasic()
                 .and()
                 .authorizeRequests()
                 .antMatchers("/authentication/require", securityProperties.getBrowserProperties().getLoginPage()).permitAll()
                 .anyRequest()
                 .authenticated()
+
                 .and()
                 .csrf().disable();
     }

@@ -8,5 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BrowserProperties {
-    private String loginPage = "/demo-sign.html";
+
+    private String loginPage = "/sign.html";
+
+    private LoginResponseType loginResponseType = LoginResponseType.JSON;
 }

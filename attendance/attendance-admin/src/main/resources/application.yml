@@ -14,5 +14,6 @@ spring:
       max-wait-millis: 150                       # 等待连接获取的最大超时时间
 attendance:
   security:
-    browser:
-      loginPage: /demo-sign.html
+    browserProperties:
+      loginResponseType: REDIRECT
+#      loginPage: /demo-sign.html

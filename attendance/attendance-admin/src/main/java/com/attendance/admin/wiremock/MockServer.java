@@ -21,7 +21,7 @@ public class MockServer {
     }
 
     private static void mock(String url, String file) throws IOException {
-        ClassPathResource resource = new ClassPathResource("mock-response/01.txt" + file + ".txt");
+        ClassPathResource resource = new ClassPathResource("static/mock-response/01.txt" + file + ".txt");
         String content = StringUtils.join(FileUtils.readLines(resource.getFile(), "UTF-8"), "\n");
 
         WireMock.stubFor(WireMock.get(urlPathEqualTo(url)).willReturn(aResponse().withBody(content).withStatus(200)));
