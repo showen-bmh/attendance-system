@@ -7,9 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="attendance-admin" />
         <module name="attendance-core" />
         <module name="attendance-security" />
+        <module name="attendance-admin" />
       </profile>
     </annotationProcessing>
   </component>
