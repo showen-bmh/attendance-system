@@ -3,7 +3,7 @@ spring:
   application:
     name: attendance-security
   datasource:
-    url: jdbc:postgresql://localhost:5432/japan_study
+    url: jdbc:postgresql://localhost:5432/attendance
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
