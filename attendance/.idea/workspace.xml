@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="655f80c1-91ba-40f6-adfb-a45fc29b5511" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../attendance-ios/attendance-ios.xcodeproj/project.xcworkspace/xcuserdata/showen.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../attendance-ios/attendance-ios.xcodeproj/project.xcworkspace/xcuserdata/showen.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/MyUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/MyUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-security/src/main/resources/static/sign.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-security/src/main/resources/static/sign.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +45,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -448,6 +461,8 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1642957498008" />
@@ -460,11 +475,11 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.attendance.admin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/attendance-admin/src/main/resources/static" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.attendance.admin" />
     </key>
   </component>
   <component name="RunManager" selected="Application.AttendanceApplication">
@@ -596,16 +611,40 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthFailureHandler.java</url>
-          <line>32</line>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthFailureHandler.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthSuccessHandler.java</url>
+          <line>27</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeFilter.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="25" />
+          <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthSuccessHandler.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/BrowserSecurityController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/BrowserSecurityController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">

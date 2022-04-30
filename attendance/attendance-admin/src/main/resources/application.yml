@@ -16,11 +16,11 @@ spring:
 # 自定义配置
 attendance:
   security:
-    browserProperties:
-      loginResponseType: REDIRECT                # 登录重定向跳转,默认返回JSON
-      #      loginPage: /demo-sign.html          # 设置默认登录页
-    code:
-      image:
-        length: 5                                # 验证码位数
-        width: 200                               # 验证码图形长度
-        url: /user,/user/*                       # 验证码使用接口
+#    browserProperties:
+#      loginResponseType: REDIRECT                # 登录重定向跳转,默认返回JSON
+#      loginPage: /demo-sign.html                 # 设置默认登录页
+#    code:
+#      image:
+#        length: 4                                # 验证码位数
+#        width: 200                               # 验证码图形长度
+#        url: /user,/user/*                       # 验证码使用接口

@@ -19,6 +19,6 @@ public class MyUserDetailService implements UserDetailsService {
 //        }
 //        return new AccountUser(userInfo.getUserId(), userInfo.getUsername(), userInfo.getPassword(), getUserAuthority(userInfo.getUserId()));
 
-        return new User("hello", new BCryptPasswordEncoder().encode("123"), AuthorityUtils.commaSeparatedStringToAuthorityList("admin"));
+        return new User("user", new BCryptPasswordEncoder().encode("111111"), AuthorityUtils.commaSeparatedStringToAuthorityList("admin"));
     }
 }

@@ -15,6 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="attendance" options="-parameters" />
       <module name="attendance-admin" options="-parameters" />
       <module name="attendance-core" options="-parameters" />
       <module name="attendance-security" options="-parameters" />
