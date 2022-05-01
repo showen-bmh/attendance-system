@@ -1,6 +1,8 @@
-package com.attendance.security.core.validate.code;
+package com.attendance.security.core.validate.code.image;
 
 import com.attendance.security.core.properties.SecurityProperties;
+import com.attendance.security.core.validate.code.ValidateCodeGenerator;
+import com.attendance.security.core.validate.code.image.ImageCode;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.ServletRequestUtils;

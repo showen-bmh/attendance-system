@@ -1,6 +1,7 @@
 package com.attendance.security.core.validate.code;
 
 import com.attendance.security.core.properties.SecurityProperties;
+import com.attendance.security.core.validate.code.image.ImageCode;
 import lombok.Data;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.InitializingBean;

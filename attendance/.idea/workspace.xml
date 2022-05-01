@@ -5,10 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="655f80c1-91ba-40f6-adfb-a45fc29b5511" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/SecurityConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/image/ImageCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/image/ImageCodeProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/impl/AbstractValidateCodeProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms/DefaultSmsCodeSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms/SmsCodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms/SmsCodeProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms/SmsCodeSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/BrowserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/BrowserProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/BrowserSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/BrowserSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/ImageCodeProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/ImageCodeProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/ValidateCodeProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/ValidateCodeProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ImageCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ImageCodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/image/ImageCodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeBeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeBeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-security/src/main/resources/static/sign.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-security/src/main/resources/static/sign.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +138,9 @@
     <option name="height" value="900" />
   </component>
   <component name="ProjectId" id="27YPxRWh8OzHbxCoLdtkefspHDU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <hideEmptyPackages ProjectPane="false" />
@@ -462,7 +480,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1642957498008" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -471,11 +489,19 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms" />
+      <recent name="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/attendance-admin/src/main/resources/static" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.attendance.admin" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.attendance.security.core.properties" />
+      <recent name="com.attendance.security.core.validate.code" />
     </key>
   </component>
   <component name="RunManager" selected="Application.AttendanceApplication">
@@ -601,6 +627,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

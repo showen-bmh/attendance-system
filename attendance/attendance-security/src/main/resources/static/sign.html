@@ -5,36 +5,58 @@
     <title>Sign in to System</title>
 </head>
 <body>
-    <h2>Default login page</h2>
-    <h3>Form login</h3>
-    <form action="/authentication/form" method="post">
-        <table>
-            <tr>
-                <td>username:</td>
-                <td><input type="text" name="username"></td>
-            </tr>
-            <tr>
-                <td>password:</td>
-                <td><input type="password" name="password"></td>
-            </tr>
-            <tr>
-                <td>Captcha:</td>
-                <td>
-                    <input type="test" name="imageCode">
-                    <img src="/code/image?width=60" style="vertical-align:bottom">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    Remember Me<input name="remember-me" type="checkbox" value="true"/>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <button type="submit">Sign In</button>
-                </td>
-            </tr>
-        </table>
-    </form>
+<h2>Default login page</h2>
+<h3>Form login</h3>
+<form action="/authentication/form" method="post">
+    <table>
+        <tr>
+            <td>username:</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>password:</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Captcha:</td>
+            <td>
+                <input type="test" name="imageCode">
+                <img src="/code/image?width=60" style="vertical-align:bottom">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Remember Me<input name="remember-me" type="checkbox" value="true"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Sign In</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<h3>MSM login</h3>
+<form action="/authentication/mobile" method="post">
+    <table>
+        <tr>
+            <td>Mobile Number:</td>
+            <td><input type="text" name="mobile" value="090-1234-5678"></td>
+        </tr>
+        <tr>
+            <td>MSM Captcha:</td>
+            <td>
+                <input type="test" name="smsCode">
+                <a href="/code/sms?mobile=090-1234-5678">Send a smsCode</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Sign In</button>
+            </td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
