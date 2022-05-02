@@ -40,23 +40,23 @@ public class UserControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.length()").value(3));
     }
 
-    @Test
-    public void classQuerySuccess() throws Exception {
-        String result = mockMvc.perform(MockMvcRequestBuilders.get("/user/class")
-                .param("username", "jojo")
-                .param("age", "18")
-                .param("ageTo", "60")
-                .param("xxx", "yyy")
-//                .param("size", "15")
-//                .param("page", "3")
-//                .param("sort", "age,desc")
-                .contentType(MediaType.APPLICATION_JSON_UTF8))
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.jsonPath("$.length()").value(1))
-                .andReturn().getResponse().getContentAsString();
-
-        System.out.println(result);
-    }
+//    @Test
+//    public void classQuerySuccess() throws Exception {
+//        String result = mockMvc.perform(MockMvcRequestBuilders.get("/user/class")
+//                .param("username", "jojo")
+//                .param("age", "18")
+//                .param("ageTo", "60")
+//                .param("xxx", "yyy")
+////                .param("size", "15")
+////                .param("page", "3")
+////                .param("sort", "age,desc")
+//                .contentType(MediaType.APPLICATION_JSON_UTF8))
+//                .andExpect(MockMvcResultMatchers.status().isOk())
+//                .andExpect(MockMvcResultMatchers.jsonPath("$.length()").value(1))
+//                .andReturn().getResponse().getContentAsString();
+//
+//        System.out.println(result);
+//    }
 
     @Test
     public void whenGenInfoSuccess() throws Exception {
@@ -76,20 +76,20 @@ public class UserControllerTest {
                 .andExpect(MockMvcResultMatchers.status().is4xxClientError());
     }
 
-    @Test
-    public void whenCreateSuccess() throws Exception {
-
-        Date date = new Date();
-        System.out.println(date.getTime());
-        String content = "{\"username\":\"tom\",\"password\":\"jw\",\"birthday\":" + date.getTime() + " }";
-        String result = mockMvc.perform(MockMvcRequestBuilders.post("/user")
-                .contentType(MediaType.APPLICATION_JSON_UTF8).content(content))
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.jsonPath("$.id").value("1"))
-                .andReturn().getResponse().getContentAsString();
-
-        System.out.println(result);
-    }
+//    @Test
+//    public void whenCreateSuccess() throws Exception {
+//
+//        Date date = new Date();
+//        System.out.println(date.getTime());
+//        String content = "{\"username\":\"tom\",\"password\":\"jw\",\"birthday\":" + date.getTime() + " }";
+//        String result = mockMvc.perform(MockMvcRequestBuilders.post("/user")
+//                .contentType(MediaType.APPLICATION_JSON_UTF8).content(content))
+//                .andExpect(MockMvcResultMatchers.status().isOk())
+//                .andExpect(MockMvcResultMatchers.jsonPath("$.id").value("1"))
+//                .andReturn().getResponse().getContentAsString();
+//
+//        System.out.println(result);
+//    }
 
     @Test
     public void whenUpdateSuccess() throws Exception {

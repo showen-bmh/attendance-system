@@ -9,9 +9,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class BrowserProperties {
 
-    private String loginPage = "/sign.html";
+    private SessionProperties session = new SessionProperties();
 
-    private LoginResponseType loginResponseType = LoginResponseType.JSON;
+    private String signUpUrl = "/default-sign-in.html";
+
+    private String loginPage = SecurityConstants.DEFAULT_LOGIN_PAGE_URL;
+
+    private LoginResponseType loginType = LoginResponseType.JSON;
 
     private int rememberMeSeconds = 3600;
 }

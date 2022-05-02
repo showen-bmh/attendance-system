@@ -5,26 +5,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="655f80c1-91ba-40f6-adfb-a45fc29b5511" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/SecurityConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/image/ImageCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/image/ImageCodeProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/impl/AbstractValidateCodeProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms/DefaultSmsCodeSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms/SmsCodeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms/SmsCodeProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms/SmsCodeSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/code/DemoImageCodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/security/DemoConnectionSignUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/security/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/validator/ValidateAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/validator/ValidateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-admin/src/main/resources/static/demo-binding.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-admin/src/main/resources/static/demo-sign-up.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-admin/src/main/resources/static/mock-response/02.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/authentication/AbstractChannelSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/authentication/mobile/SmsCodeAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/authentication/mobile/SmsCodeAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/authentication/mobile/SmsCodeAuthenticationSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/authentication/mobile/SmsCodeAuthenticationToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/QQProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/SessionProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/SocialProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/WeixinProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/ConnectView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/ConnectionStatusView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/SocialConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/SpringSocialConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/qq/api/QQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/qq/api/QQImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/qq/api/QQUserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/qq/config/QQAutoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/qq/connet/QQAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/qq/connet/QQConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/qq/connet/QQOAuth2Template.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/qq/connet/QQServiceProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/weixin/api/Weixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/weixin/api/WeixinImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/weixin/api/WeixinUserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/weixin/config/WeixinAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/weixin/connect/WeixinAccessGrant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/weixin/connect/WeixinAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/weixin/connect/WeixinConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/weixin/connect/WeixinOAuth2Template.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/social/weixin/connect/WeixinServiceProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeProcessorHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/BrowserSecurityBeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/session/AbstractSessionStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/session/AttendanceExpiredSessionStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/session/AttendanceInvalidSessionStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/support/SocialUserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-security/src/main/resources/static/default-banding.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-security/src/main/resources/static/default-sign-up.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attendance-security/src/main/resources/static/session/invalid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/ImageCodeProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/ImageCodeProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/ValidateCodeProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/ValidateCodeProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ImageCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ImageCodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/image/ImageCodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeBeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeBeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/web/aspect/TimeAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/web/aspect/TimeAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/web/async/AsyncController.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/web/async/AsyncController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/web/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/web/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-admin/src/main/resources/static/demo-sign.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-admin/src/main/resources/static/demo-sign-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-admin/src/main/resources/static/mock-response/01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-admin/src/main/resources/static/mock-response/01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-admin/src/test/java/com/attendance/admin/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-admin/src/test/java/com/attendance/admin/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/BrowserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/BrowserProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/SecurityConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/SecurityConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/SecurityProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/properties/SecurityProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance-security/src/main/resources/static/sign.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-security/src/main/resources/static/sign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/ValidateCodeType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/BrowserSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/BrowserSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/BrowserSecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/BrowserSecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/MyUserDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthFailureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance-security/src/main/resources/static/sign.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance-security/src/main/resources/static/default-sign-in.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -480,7 +532,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1642957498008" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/attendance-admin/src/main/resources/static/mock-response" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -490,8 +542,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/sms" />
-      <recent name="$PROJECT_DIR$/attendance-core/src/main/java/com/attendance/security/core/validate/code/image" />
+      <recent name="$PROJECT_DIR$/attendance-admin/src/main/resources/static/mock-response" />
+      <recent name="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin/validator" />
+      <recent name="$PROJECT_DIR$/attendance-admin/src/main/java/com/attendance/admin" />
+      <recent name="$PROJECT_DIR$/attendance-admin/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/attendance-security/src/main/resources/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/attendance-admin/src/main/resources/static" />
@@ -500,11 +555,13 @@
       <recent name="com.attendance.admin" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.attendance.admin.web.config" />
+      <recent name="com.attendance.admin.code" />
       <recent name="com.attendance.security.core.properties" />
       <recent name="com.attendance.security.core.validate.code" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AttendanceApplication">
+  <component name="RunManager" selected="JUnit.UserControllerTest">
     <configuration name="AttendanceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.attendance.admin.AttendanceApplication" />
       <module name="attendance-admin" />
@@ -542,8 +599,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AttendanceApplication" />
         <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="Application.AttendanceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -638,42 +695,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthFailureHandler.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthFailureHandler.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthSuccessHandler.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/authentication/AttendanceAuthSuccessHandler.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/BrowserSecurityController.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/attendance-security/src/main/java/com/attendance/security/browser/BrowserSecurityController.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
